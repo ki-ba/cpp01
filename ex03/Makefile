@@ -5,18 +5,23 @@
 #                                                     +:+ +:+         +:+      #
 #    By: kbarru <kbarru@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/10/07 16:20:27 by kbarru            #+#    #+#              #
+#    Created: 2025/10/13 09:20:27 by kbarru            #+#    #+#              #
 #    Updated: 2025/10/07 16:30:12 by kbarru           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
 OBJ_DIR = .obj/
-SRC = main.cpp
+INC_DIR = inc/
+SRC_DIR = src/
+
+SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+INC_R = Weapon.hpp HumanA.hpp HumanB.hpp
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
-NAME = brainz02
+NAME = brainz03
 
 OBJ = $(addprefix $(OBJ_DIR), $(SRC:%.cpp=%.o))
+INC = $(addprefix $(INC_DIR), $(INC_R:%.hpp=%.o))
 
 .PHONY : all
 all : $(NAME)
@@ -39,5 +44,5 @@ $(OBJ_DIR) :
 $(NAME) : $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-$(OBJ_DIR)%.o : %.cpp | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+$(OBJ_DIR)%.o : $(SRC_DIR)%.cpp | $(OBJ_DIR)
+	$(CC) $(CFLAGS) -I$(INC_DIR) -c $< -o $@

@@ -10,8 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
+#include <string.h>
 
 int	main(void)
 {
-	std::string str = "HI THIS IS BRAIN";
+	std::string *stringPTR;
+	std::string str;
+	std::string &stringREF = str;
+
+	str = "HI THIS IS BRAIN";
+
+	std::cout << std::endl << "ADDRESSES : " << std::endl;
+	std::cout << "string : " << &str << std::endl;
+	std::cout << "pointer : " << &stringPTR << std::endl;
+	std::cout << "reference : " << &stringREF << std::endl;
+	std::cout <<  std::endl << "VALUES : " << std::endl;
+	std::cout << "string : " << str << std::endl;
+	std::cout << "pointer : " << stringPTR << std::endl;
+	std::cout << "reference : " << stringREF << std::endl;
 }
