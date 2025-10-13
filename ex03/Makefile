@@ -32,7 +32,7 @@ re : fclean
 
 .PHONY : clean
 clean : 
-	rm -rf $(OBJ)
+	rm -rf $(OBJ_DIR)
 
 .PHONY : fclean
 fclean : clean
