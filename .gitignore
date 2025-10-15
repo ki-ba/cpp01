@@ -1,7 +1,17 @@
+# Miscellaneous
+
 */compile_commands.json
 .cache
 */make_output.txt
+
+# Executables
+
 */brainz
 ex02/hithisisbrain
 ex03/violence
+*/notsed
+
+# OBJ Files
+
 */.obj/
+*/*.o
