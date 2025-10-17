@@ -17,30 +17,17 @@
 
 class Zombie {
 private:
-    std::string name;
+    std::string _name;
 
 public:
-    // Default constructor
     Zombie();
-
-    // Parameterized constructor
     Zombie(const std::string& name);
-    // Copy constructor
     Zombie(const Zombie& other);
-
-    // Copy assignment operator
     void operator=(const Zombie& other);
-
-    // Destructor
     ~Zombie();
-
-    // Getter for name
     std::string getName() const;
-
-    // Setter for name
     void setName(const std::string& newName);
 
-    // Member function to announce the zombie
     void announce() const;
 };
 

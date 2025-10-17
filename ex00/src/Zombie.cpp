@@ -16,36 +16,37 @@
 Zombie::Zombie()
 {
 	std::cout << "[Zombie] Default constructor called" << std::endl;
+	this->_name = "boring nameless zombie";
 }
 
 Zombie::Zombie(const std::string& zombie_name)
 {
 	std::cout << "[Zombie] String constructor called" << std::endl;
-	this->name = zombie_name;
+	this->_name = zombie_name;
 }
 
 Zombie::Zombie(const Zombie &other)
+	: _name(other._name)
 {
-	std::cout << "[Zombie] Copy destructor called" << std::endl;
-	this->setName(other.name);
+	std::cout << "[Zombie] Copy constructor called" << std::endl;
 }
 
 Zombie::~Zombie()
 {
-	std::cout << "[Zombie] Default destructor called" << std::endl;
+	std::cout << this->_name << " : *dies*" << std::endl;
 }
 
 void	Zombie::operator=(const Zombie &other)
 {
-	this->name = other.name;
+	this->_name = other._name;
 }
 
 void	Zombie::setName(const std::string& newName)
 {
-	this->name = newName;
+	this->_name = newName;
 }
 
 void Zombie::announce(void) const
 {
-	std::cout << name << " : BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->_name << " : BraiiiiiiinnnzzzZ..." << std::endl;
 }

@@ -10,9 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	main(int argc, char *argv[])
+#include "Zombie.hpp"
+
+Zombie *newZombie(std::string name); // defined in newZombie.cpp
+void randomChump(std::string name); // defined in randomChump.cpp
+
+int	main(void)
 {
-	(void)argc;
-	(void)argv;
+	Zombie	*z = newZombie("Fred the undead");
+	z->announce();
+
+	Zombie boringZombie;
+	boringZombie.announce();
+
+	randomChump("Edwin the unbreathin'");
+	delete z;
 	return (0);
 }
