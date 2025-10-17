@@ -21,12 +21,12 @@ int	main(void)
 
 	str = "HI THIS IS BRAIN";
 
-	std::cout << std::endl << "ADDRESSES : " << std::endl;
-	std::cout << "string : " << &str << std::endl;
-	std::cout << "pointer : " << &stringPTR << std::endl;
-	std::cout << "reference : " << &stringREF << std::endl;
+	std::cout << std::endl << "ADDRESSES :" << std::endl;
+	std::cout << "string :	" << &str << std::endl;
+	std::cout << "reference :	" << &stringREF << std::endl;
+	std::cout << "pointer :	" << &stringPTR << std::endl;
 	std::cout <<  std::endl << "VALUES : " << std::endl;
-	std::cout << "string : " << str << std::endl;
-	std::cout << "pointer : " << stringPTR << std::endl;
-	std::cout << "reference : " << stringREF << std::endl;
+	std::cout << "string :	" << str << std::endl;
+	std::cout << "pointer :	" << stringPTR << std::endl;
+	std::cout << "reference :	" << stringREF << std::endl;
 }

@@ -14,7 +14,7 @@ OBJ_DIR = .obj/
 SRC = main.cpp
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
-NAME = brainz02
+NAME = thisisbrain
 
 OBJ = $(addprefix $(OBJ_DIR), $(SRC:%.cpp=%.o))
 
