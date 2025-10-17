@@ -18,7 +18,10 @@ int main() {
 	h.complain("info");
 	h.complain("warning");
 	h.complain("error");
+
+	// Testing unknown levels
 	h.complain("unknown");
+	h.complain("");
 	h.complain("0");
 	return 0;
 }
