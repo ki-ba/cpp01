@@ -26,14 +26,11 @@ re : fclean
 
 .PHONY : clean
 clean : 
-	rm -rf $(OBJ_DIR)
+	rm -rf $(OBJ)
 
 .PHONY : fclean
 fclean : clean
 	rm -rf $(NAME)
-
-$(OBJ_DIR) :
-	mkdir -p $(OBJ_DIR)
 
 $(NAME) : $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
