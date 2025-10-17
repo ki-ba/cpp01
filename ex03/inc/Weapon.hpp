@@ -13,14 +13,12 @@
 #ifndef WEAPON_HPP
 # define WEAPON_HPP
 
-#include <string.h>
-#include <stdio.h>
 #include <iostream>
 
 class Weapon
 {
 private:
-	std::string type;
+	std::string _type;
 
 public:
 	Weapon(std::string type);

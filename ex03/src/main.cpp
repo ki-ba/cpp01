@@ -16,18 +16,18 @@
 
 int main()
 {
-	Weapon w1 = Weapon("iron sword");
-	Weapon w2 = Weapon("iron battleaxe");
+	Weapon w1 = Weapon("rusty sword");
+	Weapon w2 = Weapon("rusty battleaxe");
 
 	HumanA bob("Bob", w1);
 	HumanB jim("Jim");
 
 	bob.attack();
-	w1.setType("diamond sword");
+	w1.setType("shiny gold-infused sword");
 	bob.attack();
 
 	jim.setWeapon(w2);
 	jim.attack();
-	w2.setType("diamond battleaxe");
+	w2.setType("enormous two-handed battleaxe");
 	jim.attack();
 }

@@ -10,24 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <iostream>
 #include "Weapon.hpp"
 
-Weapon::Weapon(std::string type)
+Weapon::Weapon(std::string type) : _type(type)
 {
-	this->setType(type);
 }
 
 std::string Weapon::getType() const
 {
-	return (this->type);
+	return (this->_type);
 }
 
 void Weapon::setType(std::string newType)
 {
-	// std::cout << "weapon had type " << this->getType() << std::endl;
-	this->type = newType;
-	// std::cout << "weapon has type " << this->getType() << std::endl;
+	this->_type = newType;
 }
