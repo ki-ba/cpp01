@@ -14,6 +14,10 @@
 
 int main(int argc, char *argv[]) {
 	Harl h;
+	if (argc != 2) {
+		std::cout << "Usage: ./harlFilter <level>" << std::endl;
+		return 1;
+	}
 	std::string level = argv[1];
 	if (argc != 2) {
 		std::cout << "Usage: ./harlFilter <level>" << std::endl;
@@ -30,7 +34,7 @@ int main(int argc, char *argv[]) {
 			h.complain("ERROR");
 			break;
 		default:
-			std::cout << "[mumbling and side-eying]" << std::endl;
+			std::cout << "[walking aimlessly]" << std::endl;
 			break;
 	}
 		return 0;

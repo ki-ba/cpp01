@@ -22,22 +22,22 @@ Harl::~Harl()
 
 void Harl::debug()
 {
-	std::cout << "[DEBUG]		I'm Harl. I really love bacon." << std::endl;
+	std::cout << "[DEBUG]		Let me guess... someone stole your sweetroll." << std::endl;
 }
 
 void Harl::info()
 {
-	std::cout << "[INFO]		I am unnhapy about the quantity of bacon in my burger." << std::endl;
+	std::cout << "[INFO]		I used to be an adventurer like you, then I took an arrow in the knee." << std::endl;
 }
 
 void Harl::warning()
 {
-	std::cout << "[WARNING]	I am very entitled and will soon become hostile." << std::endl;
+	std::cout << "[WARNING]	Disrespect the law, and you disrespect me." << std::endl;
 }
 
 void Harl::error()
 {
-	std::cout << "[ERROR]		You have made your last mistake. En guarde." << std::endl;
+	std::cout << "[ERROR]		You have committed crimes against Skyrim and her people. What say you in your defense?" << std::endl;
 }
 
 int Harl::levelToInt(std::string level) const
