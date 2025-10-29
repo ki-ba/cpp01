@@ -32,7 +32,7 @@ Zombie::Zombie(const Zombie &other)
 
 Zombie::~Zombie()
 {
-	std::cout << "[Zombie] Default destructor called" << std::endl;
+	std::cout << this->name << " : *dies*" << std::endl;
 }
 
 void	Zombie::operator=(const Zombie &other)

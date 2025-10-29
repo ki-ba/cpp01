@@ -15,18 +15,20 @@
 
 int	main(void)
 {
-	std::string *stringPTR;
-	std::string str;
+	std::string str = "HI THIS IS BRAIN";
+	std::string *stringPTR = &str;
 	std::string &stringREF = str;
 
-	str = "HI THIS IS BRAIN";
 
 	std::cout << std::endl << "ADDRESSES :" << std::endl;
-	std::cout << "string :	" << &str << std::endl;
-	std::cout << "reference :	" << &stringREF << std::endl;
-	std::cout << "pointer :	" << &stringPTR << std::endl;
+
+	std::cout << "address of string :	" << &str << std::endl;
+	std::cout << "address held by ptr :	" << stringPTR << std::endl;
+	std::cout << "address held by ref :	" << &stringREF << std::endl;
+
 	std::cout <<  std::endl << "VALUES : " << std::endl;
-	std::cout << "string :	" << str << std::endl;
-	std::cout << "pointer :	" << stringPTR << std::endl;
-	std::cout << "reference :	" << stringREF << std::endl;
+
+	std::cout << "value of the string str:	" << str << std::endl;
+	std::cout << "pointed to by stringPTR :	" << *stringPTR << std::endl;
+	std::cout << "pointed to by stringREF:	" << stringREF << std::endl;
 }

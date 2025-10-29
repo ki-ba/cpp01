@@ -14,12 +14,18 @@
 
 HumanB::HumanB(std::string name) : _name(name)
 {
+	this->_weapon = NULL;
+}
+
+HumanB::~HumanB()
+{
 }
 
 void HumanB::setWeapon(Weapon &weapon)
 {
 	this->_weapon = &weapon;
 }
+
 Weapon *HumanB::getWeapon() const
 {
 	return (this->_weapon);

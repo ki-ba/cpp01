@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "Harl.hpp"
-#include "stdio.h"
 
 Harl::Harl()
 {
@@ -53,5 +52,4 @@ void Harl::complain(std::string level)
 			return ;
 		}
 	}
-	// std::cout << level << " : no such level." << std::endl;
 }

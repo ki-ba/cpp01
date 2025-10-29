@@ -13,8 +13,6 @@
 #ifndef HUMAN_A_HPP
 # define HUMAN_A_HPP
 
-# include <iostream>
-# include <stdio.h>
 # include "Weapon.hpp"
 
 class HumanA
@@ -27,9 +25,6 @@ public:
 	~HumanA();
 	Weapon getWeapon();
 	void attack();
-
-
-
 };
 
 #endif

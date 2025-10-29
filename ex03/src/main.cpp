@@ -19,15 +19,18 @@ int main()
 	Weapon w1 = Weapon("rusty sword");
 	Weapon w2 = Weapon("rusty battleaxe");
 
-	HumanA bob("Bob", w1);
-	HumanB jim("Jim");
+	HumanA andrew("Andrew", w1);
+	HumanB bob("Bob");
 
+	andrew.attack();
 	bob.attack();
+
+	andrew.attack();
 	w1.setType("shiny gold-infused sword");
-	bob.attack();
+	andrew.attack();
 
-	jim.setWeapon(w2);
-	jim.attack();
+	bob.setWeapon(w2);
+	bob.attack();
 	w2.setType("enormous two-handed battleaxe");
-	jim.attack();
+	bob.attack();
 }

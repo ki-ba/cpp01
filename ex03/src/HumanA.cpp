@@ -20,6 +20,7 @@ HumanA::HumanA(std::string name, Weapon &weapon)
 HumanA::~HumanA()
 {
 }
+
 Weapon HumanA::getWeapon()
 {
 	return (this->_weapon);
