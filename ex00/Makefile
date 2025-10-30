@@ -4,9 +4,9 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 INC = Zombie.hpp
 
-INC_DIR = inc/
+INC_DIR = ./
+SRC_DIR = ./
 OBJ_DIR = .obj/
-SRC_DIR = src/
 
 INC_P = $(addprefix $(INC_DIR), $(INC))
 
