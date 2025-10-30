@@ -11,8 +11,8 @@
 # **************************************************************************** #
 
 OBJ_DIR = .obj/
-INC_DIR = inc/
-SRC_DIR = src/
+INC_DIR = ./
+SRC_DIR = ./
 
 SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 INC_R = Weapon.hpp HumanA.hpp HumanB.hpp
