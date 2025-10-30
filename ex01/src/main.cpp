@@ -11,13 +11,23 @@
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+#include <iostream>
 
 Zombie *zombieHorde(int N, std::string name);
 #define HORDE_SIZE 10
 
 int	main(void)
 {
-	Zombie *horde = zombieHorde(HORDE_SIZE, "hordeling");
+	Zombie *horde = NULL;
+	try
+	{
+		horde = zombieHorde(HORDE_SIZE, "hordeling");
+	}
+	catch(std::bad_alloc& ba)
+	{
+		std::cout <<"bad_alloc caught:"<< ba.what() << std::endl;
+		return (1);
+	}
 
 	for (int i = 0; i < HORDE_SIZE; ++i)
 		horde[i].announce();
