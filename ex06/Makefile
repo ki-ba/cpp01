@@ -15,8 +15,8 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = harlFilter
 
 OBJ_DIR = .obj/
-INC_DIR = inc/
-SRC_DIR = src/
+INC_DIR = ./
+SRC_DIR = ./
 
 SRC = main.cpp Harl.cpp
 INC_R = Harl.hpp
