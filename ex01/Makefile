@@ -4,9 +4,9 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC = main.cpp Zombie.cpp zombieHorde.cpp
 INC = Zombie.hpp
 
-INC_DIR = inc/
+INC_DIR = ./
 OBJ_DIR = .obj/
-SRC_DIR = src/
+SRC_DIR = ./
 
 INC_P = $(addprefix $(INC_DIR), $(INC))
 
